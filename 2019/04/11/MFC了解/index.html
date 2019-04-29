@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-sk.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-sk.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-sk.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT">
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="以下是我从其他网站中学的内容，后有相应的网站学习链接地址，可供学习 1.选择菜单项File-&amp;gt;New-&amp;gt;Project，弹出“New Project”对话框。  2.左侧面板中Installed Templated的Visual C++下选择MFC，中间窗口中选择MFC Application，然后在下面的Name编辑框中键入工程名称，本例取名“Addition”，在Location编">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MFC了解">
+<meta property="og:url" content="http://yoursite.com/2019/04/11/MFC了解/index.html">
+<meta property="og:site_name" content="U">
+<meta property="og:description" content="以下是我从其他网站中学的内容，后有相应的网站学习链接地址，可供学习 1.选择菜单项File-&amp;gt;New-&amp;gt;Project，弹出“New Project”对话框。  2.左侧面板中Installed Templated的Visual C++下选择MFC，中间窗口中选择MFC Application，然后在下面的Name编辑框中键入工程名称，本例取名“Addition”，在Location编">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://yoursite.com/2019/04/11/MFC了解/1.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/04/11/MFC了解/2.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/04/11/MFC了解/3.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/04/11/MFC了解/4.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/04/11/MFC了解/5.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/04/11/MFC了解/6.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/04/11/MFC了解/7.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/04/11/MFC了解/8.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/04/11/MFC了解/9.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/04/11/MFC了解/10.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/04/11/MFC了解/11.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/04/11/MFC了解/12.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/04/11/MFC了解/13.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/04/11/MFC了解/14.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/04/11/MFC了解/15.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/04/11/MFC了解/16.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/04/11/MFC了解/17.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/04/11/MFC了解/18.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/04/11/MFC了解/19.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/04/11/MFC了解/20.png">
+<meta property="og:updated_time" content="2019-04-16T06:58:21.141Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="MFC了解">
+<meta name="twitter:description" content="以下是我从其他网站中学的内容，后有相应的网站学习链接地址，可供学习 1.选择菜单项File-&amp;gt;New-&amp;gt;Project，弹出“New Project”对话框。  2.左侧面板中Installed Templated的Visual C++下选择MFC，中间窗口中选择MFC Application，然后在下面的Name编辑框中键入工程名称，本例取名“Addition”，在Location编">
+<meta name="twitter:image" content="http://yoursite.com/2019/04/11/MFC了解/1.jpg">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2019/04/11/MFC了解/">
+
+
+
+
+
+  <title>MFC了解 | U</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">U</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/11/MFC了解/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="U">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/sk.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="U">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">MFC了解</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-04-11T14:18:52+08:00">
+                2019-04-11
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/学习计划/" itemprop="url" rel="index">
+                    <span itemprop="name">学习计划</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/学习计划/MFC/" itemprop="url" rel="index">
+                    <span itemprop="name">MFC</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>以下是我从其他网站中学的内容，后有相应的网站学习链接地址，可供学习</p>
+<p>1.选择菜单项File-&gt;New-&gt;Project，弹出“New Project”对话框。</p>
+<p> 2.左侧面板中Installed Templated的Visual C++下选择MFC，中间窗口中选择MFC Application，然后在下面的Name编辑框中键入工程名称，本例取名“Addition”，在Location编辑框中设置工程的保存路径。点“OK”。</p>
+<p> 3.点“Next”到“Application Type”对话框，在Application type下选择Dialog based，其他使用默认设置，点“Finish”。</p>
+<p> 我们可以在Solution Explorer视图中看到，此工程的文件要比单文档应用程序少的多，在Class View中主要有三个类：CAboutDlg、CAdditionApp和CAdditionDlg。CAboutDlg是应用程序的“关于”对话框类，CAdditionApp是由CWinApp派生的类，CAdditionDlg是主对话框类，主对话框也就是此应用程序运行后显示的主要界面。</p>
+<p>在Resource View视图中可以看到工程Addition的资源树，展开Addition.rc，下面有四个子项：Dialog（对话框）、Icon（图标）、String Table（字符串表）和Version（版本）。然后展开Dialog项，下面有两个对话框模板，其ID分别为：IDD_ABOUTBOX和IDD_ADDITION_DIALOG，前者是“关于”对话框的模板，后者是主对话框的模板。ID是资源的唯一标识，本质上是一个无符号整数，一般ID代表的整数值由系统定义，我们无需干涉。</p>
+<p>可见对于主对话框来说，创建对话框第一步中的创建新的对话框模板已经由系统自动完成了。而如果是再添加对话框需要创建新的对话框模板时，需要在Resource View的“Dialog”节点上点右键，在右键菜单中选择“Insert Dialog”，就会生成新的对话框模板，并且会自动分配ID。</p>
+<p>在Resource View的资源树中双击某个ID，可在中间区域内显示相应的资源界面。双击IDD_ADDITION_DIALOG时，中间区域就会显示Addition对话框模板。如下图：</p>
+<p><img src="1.jpg" alt></p>
+<p>在Addition对话框模板上点右键，然后在右键菜单中选择Properties，则在右侧面板中会显示对话框的属性列表。如下图：</p>
+<p><img src="2.jpg" alt></p>
+<p>1.ID：对话框ID，唯一标识对话框资源，可以修改。此处为IDD_ADDITION_DIALOG，我们不修改它。</p>
+<p>2.Caption：对话框标题。此处默认为Addition，我们将其修改为“加法计算器”。</p>
+<p>3.Border：边框类型。有四种类型：None、Thin、Resizing和Dialog Frame。我们使用默认的Dialog Frame。</p>
+<p>4.Maximize：是否使用最大化按钮。我们使用默认的False。</p>
+<p>5.Minimize：是否使用最小化按钮。同样我们使用默认的False。</p>
+<p>6.Style：对话框类型。有三种类型：Overlapped（重叠窗口）、Popup（弹出式窗口）和Child（子窗口）。弹出式窗口比较常见。我们使用默认的Popup类型。</p>
+<p>7.System Menu：是否带有标题栏左上角的系统菜单，包括移动、关闭等菜单项。我们使用默认的True。</p>
+<p>8.Title Bar：是否带有标题栏。我们使用默认的True。</p>
+<p>9.Font(Size)：字体类型和字体大小。如果将其修改为非系统字体，则Use System自动改为False。而如果Use System原来为False，将其修改为True，则Font(Size)自动设置为系统字体。这里我们使用默认的系统字体。</p>
+<p>根据以上说明，其实我们只修改了标题属性。这时我们运行此程序后的界面如下：</p>
+<p><img src="3.jpg" alt></p>
+<p>1.为对话框添加一个静态文本框（Static Text），用于显示字符串–“被加数”。</p>
+<p>对于自动添加的一个标题为“TODO:Place dialog controls here.”的静态文本框，这里将它删掉，继续添加新的静态文本框。</p>
+<p>删除控件时，可以使用鼠标左键点击选中它，选中后控件的周围会出现虚线框，然后按Delete键就可以将其删除了。在“Addition”工程的Resource View中打开上一讲中创建的对话框模板IDD_ADDITION_DIALOG，自动添加的静态文本框就可以使用这种方法删除。</p>
+<p>在添加新的静态文本框以前，先看看Toolbox视图是否显示了，如果没有显示，在菜单栏上点击View-&gt;Toolbox即可。Toolbox视图如下图：</p>
+<p><img src="4.jpg" alt></p>
+<p>Toolbox中列出了一些常用控件，其中有一个是Static Text，即是我们要添加的控件。在Toolbox中的Static Text上点下鼠标左键不放开，并拖到IDD_ADDITION_DIALOG对话框模板上，模板上会出现一个虚线框，我们找到合适的位置松开鼠标左键放下它。</p>
+<p>用鼠标左键选中控件后周围出现虚线框，然后鼠标移到虚线框上几个黑点的位置会变成双向箭头的形状，此时就可以按下鼠标左键并拖动来改变控件大小了。我们可以这样改变新添加的静态文本框控件的大小，以更好的显示标题。当然，整个对话框模板也可以用这种方法改变大小。</p>
+<p>接下来就该修改静态文本框的文字了。鼠标右键点击静态文本框，在右键菜单中选择“Properties”，Properties面板就会显示出来，在面板上修改Caption属性为“被加数”，ID修改为IDC_SUMMAND_STATIC。此时模板如下图：</p>
+<p><img src="5.jpg" alt></p>
+<p>2.为对话框添加一个编辑框（Edit Control），用来输入被加数。</p>
+<p>添加编辑框的过程与静态文本框类似，在Toolbox中选中Edit Control控件拖到对话框模板上，并使其与之前的静态文本框水平对齐（为了美观），然后调整其大小使之适合被加数的输入。</p>
+<p>在编辑框上点右键，仍然在右键菜单中选择“Properties”显示出属性（Properties）面板，修改其ID为IDC_SUMMAND_EDIT。此时模板如下图：</p>
+<p><img src="6.jpg" alt></p>
+<p>3.按照1的方法添加一个标题为“加数”的静态文本框，用于显示字符串–“加数”。并将其ID改为IDC_ADDEND_STATIC。</p>
+<p>4.按照2的方法添加一个ID为IDC_ADDEND_EDIT的编辑框，用来输入加数。</p>
+<p>5.按照1的方法添加一个标题为“和”的静态文本框，用于显示文字–“和”。并修改其ID为IDC_SUM_STATIC。</p>
+<p>6.按照2的方法添加一个ID为IDC_SUM_EDIT的编辑框，用来显示最终的加和。</p>
+<p>7.类似的添加按钮（Button）控件到对话框模板，用于在被点击后触发加法计算。修改其标题为“计算”，ID为IDC_ADD_BUTTON。</p>
+<p>到此，对话框模板如图：</p>
+<p><img src="7.jpg" alt></p>
+<p>8.删除OK按钮。打开Cancel按钮的属性面板，将标题改为“退出”，并使其与“计算”按钮水平对齐。</p>
+<p>9.根据控件的布局，适当调整整个对话框模板的大小，使其相对控件布局来说大小合适，界面美观。</p>
+<p>这样在对话框模板中就把我们在本例中需要用到的控件就添加完了。最终效果如下：</p>
+<p><img src="8.jpg" alt></p>
+<p>因为例程Addition是基于对话框的程序，所以程序自动创建了对话框模板IDD_ADDITION_DIALOG，并自动生成了对话框类CAdditionDlg，它是从CDialogEx类派生的。大家用过VC++ 6.0的可能记得，我们定义的对话框类都是从CDialog类派生的，但在VS2010中，一般对话框类都是继承自CDialogEx类。</p>
+<p>创建对话框类</p>
+<p>如果是自己新添加的对话框模板，怎样为它创建对话框类呢？</p>
+<p>1.在Resource View的“Dialog”节点上右键，然后在右键菜单中选择“Insert Dialog”创建一个新的对话框模板，ID就使用默认的IDD_DIALOG1。</p>
+<p>2.在中间区域会显示新建的对话框模板，然后选中此对话框模板，点右键，在右键菜单中选择Add Class。</p>
+<p><img src="9.jpg" alt></p>
+<p>3.选择“Add Class”后会弹出一个对话框，在对话框中“Class name”下的编辑框中写入自定义的类名就可以了，例如CMyDialog。</p>
+<p>4.最后点“Finish”完成。</p>
+<p>最终你就可以在Class View中看到新生成的对话框类CMyDialog了，并且在Solution Explorer中有相应的MyDialog.h头文件和MyDialog.cpp源文件生成。CMyDialog类同样派生于CDialogEx类。</p>
+<p>注意，一般类名都以C打头，又比如，CTestDlg。</p>
+<p>为对话框中的控件添加变量</p>
+<p>在上一讲中为对话框添加了几个控件，包括三个静态文本框，三个编辑框，一个按钮控件。程序自动生成的Cancel按钮保留，作为退出按钮，而OK按钮删除掉了。</p>
+<p>静态文本框只是为了说明后面紧跟的编辑框中数据的意义，是被加数、加数还是和，所以它们是不会变的，我们就不为它们添加变量了。按钮控件是用来操作的，这里也不为它们添加变量。编辑框中的数据可能会经常变化，有必要为它们每个控件关联一个变量。</p>
+<p>首先为被加数的编辑框IDC_SUMMAND_EDIT添加变量。</p>
+<p>1.在编辑框上点右键，在右键菜单中选择“Add Variable”。弹出添加成员变量的向导对话框。</p>
+<p>2.我们想为其添加值变量而不是控件变量，所以对话框中“Category”下的组合框中选择Value。</p>
+<p>3.“Variable type”下的组合框此时默认选中的是“CString”，CString是字符串类，显然不能进行加法运算。我们可以选择double、float、int等。这里我们选择double，即编辑框关联一个double类型的变量。</p>
+<p>4.在“Variable name”中写入自定义的变量名。为其取名m_editSummand。</p>
+<p><img src="10.jpg" alt></p>
+<p>5.点“Finish”完成。</p>
+<p>注意，类的成员变量名一般以m_打头，以标识它是一个成员变量。</p>
+<p>参照此方法，再分别为加数的编辑框IDD_ADDEND_EDIT添加double型变量m_editAddend、和的编辑框IDD_SUM_EDIT添加double型变量m_editSum。</p>
+<p>对话框类的数据交换和检验</p>
+<p>在程序运行界面中，用户往往会改变控件的属性，例如，在编辑框中输入字符串，或者改变组合框的选中项，又或者改变复选框的选中状态等。控件的属性改变后MFC会相应修改控件关联变量的值。这种同步的改变是通过MFC为对话框类自动生成的成员函数DoDataExchange()来实现的，这也叫做对话框的数据交换和检验机制。</p>
+<p>我们为三个编辑框添加了变量以后，在AdditionDlg.cpp中CAdditionDlg的DoDataExchange()函数的函数体中多了三条DDX_Text调用语句。下面是函数体代码和添加的注释。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">C++代码</span><br><span class="line">void CAdditionDlg::DoDataExchange(CDataExchange* pDX)   </span><br><span class="line">&#123;   </span><br><span class="line">    // 处理MFC默认的数据交换   </span><br><span class="line">    CDialogEx::DoDataExchange(pDX);   </span><br><span class="line">    // 处理控件IDC_SUMMAND_EDIT和变量m_editSummand之间的数据交换   </span><br><span class="line">    DDX_Text(pDX, IDC_SUMMAND_EDIT, m_editSummand);   </span><br><span class="line">    // 处理控件IDC_ADDEND_EDIT和变量m_editAddend之间的数据交换   </span><br><span class="line">    DDX_Text(pDX, IDC_ADDEND_EDIT, m_editAddend);   </span><br><span class="line">    // 处理控件IDC_SUM_EDIT和变量m_editSum之间的数据交换   </span><br><span class="line">    DDX_Text(pDX, IDC_SUM_EDIT, m_editSum);   </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>再以Addition程序为例简单说下数据交换机制。如果我们在程序运行界面中输入被加数，则通过CAddition的DoDataExchange()函数可以将输入的值保存到m_editSummand变量中，反之如果程序运行中修改了变量m_editSummand的值，则通过CAddition的DoDataExchange()函数也可以将新的变量值显示到被加数的编辑框中。</p>
+<p>但是这种数据交换机制中，DoDataExchange()并不是被自动调用的，而是需要我们在程序中调用CDialogEx::UpdateData()函数，由UpdateData()函数再去自动调用DoDataExchange()的。</p>
+<p>CDialogEx::UpdateData()函数的原型为：</p>
+<p>BOOL UpdateData(BOOL bSaveAndValidate = TRUE);</p>
+<p>参数：bSaveAndValidate用于指示数据传输的方向，<strong>TRUE表示从控件传给变量，FALSE表示从变量传给控件</strong>。默认值是TRUE，即从控件传给变量。</p>
+<p>返回值：CDialogEx::UpdateData()函数的返回值表示操作是否成功，成功则返回TRUE，否则返回FALSE。</p>
+<p>在下一讲中将具体演示CDialogEx::UpdateData()函数如何使用。</p>
+<p>本节主要讲的是新建对话框类和添加控件变量，控件的消息处理函数将在下一讲详细介绍。</p>
+<hr>
+<p>创建对话框类和添加控件变量在上一讲中已经讲过，这一讲的主要内容是如何为控件添加消息处理函数。</p>
+<p>MFC为对话框和控件等定义了诸多消息，我们对它们操作时会触发消息，这些消息最终由消息处理函数处理。比如我们点击按钮时就会产生BN_CLICKED消息，修改编辑框内容时会产生EN_CHANGE消息等。一般为了让某种操作达到效果，我们只需要实现某个消息的消息处理函数。</p>
+<p>一.添加消息处理函数</p>
+<p>以前面的加法计算器的程序为例，说明怎样为“计算”按钮控件添加消息处理函数。添加方法列出4种：</p>
+<p>1.使用Class Wizard添加消息处理函数</p>
+<p>用过的VC++ 6.0的朋友应该对Class Wizard很熟悉了，添加类、消息处理函数等经常会用到它，可以说是一个很核心的功能。但从VS2002开始就见不到Class Wizard了，大部分功能都集成到对话框和控件等的属性中了，使用很方便。到VS2010，久违的Class Wizard又回来了。但已经习惯了使用属性中的功能了，对于从VC++ 6.0直接转VS2010的朋友可能觉得还是使用Class Wizard比较习惯。</p>
+<p><img src="11.jpg" alt></p>
+<p>大家应该记得，“计算”按钮的ID为IDC_ADD_BUTTON，上图中Commands标签下，Oject IDs列表中有此ID，因为我们是想实现点击按钮后的消息处理函数，所以在Messages列表中选择BN_CLICKED消息，然后点右上方的Add Handler就可以添加BN_CLICKED消息处理函数OnClickedAddButton了。当然你也可以改名，但一般用的默认的就可以。</p>
+<p>2.通过“Add Event Handler…”添加消息处理函数</p>
+<p>在“计算”按钮上点右键，然后在右键菜单中选择菜单项“Add Event Handler…”，弹出“Event Handler Wizard”对话框，如下图：</p>
+<p><img src="12.jpg" alt></p>
+<p>可见“Message type”中默认选中的就是BN_CLICKED消息，函数名和所在类都已经自动给出，直接点“Add and Edit”就可以了。</p>
+<p>3.在按钮的属性视图中添加消息处理函数</p>
+<p>上面说过，从VS2002开始就主要从属性视图添加消息处理函数了。我们在“计算”按钮上点右键，在右键菜单中选择“Properties”，右侧面板中会显示按钮的属性视图。</p>
+<p><img src="13.jpg" alt></p>
+<p>我们可以像上图中那样，点属性视图的“Control Events”按钮（类似闪电标志），下面列出了“计算”按钮的所有消息。我们要处理的是BN_CLICKED消息，点其右侧空白列表项，会出现一个带下箭头的按钮，再点此按钮会出现“<add> OnBnClickedAddButton”选项，最后选中这个选项就会自动添加BN_CLICKED处理函数了。</add></p>
+<p>4.双击按钮添加消息处理函数</p>
+<p>最直接最简单的方法就是，双击“计算”按钮，MFC会自动为其在CAdditionDlg类中添加BN_CLICKED消息的处理函数OnBnClickedAddButton()。</p>
+<p>二.在消息处理函数中添加自定义功能</p>
+<p>在我们使用任意一种方法添加了消息处理函数以后，都只能得到一个空的OnBnClickedAddButton()函数的函数体，要实现我们想要的功能，还需要在函数体中加入自定义功能代码。</p>
+<p>在加法计算器程序中，我们想要“计算”按钮实现的功能是，获取被加数和加数的数值，然后计算它们的和并显示到和的编辑框里。那么，OnBnClickedAddButton()的函数体就应修改为：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">C++代码</span><br><span class="line">void CAdditionDlg::OnBnClickedAddButton()   </span><br><span class="line">&#123;   </span><br><span class="line">    // TODO: Add your control notification handler code here   </span><br><span class="line">    // 将各控件中的数据保存到相应的变量   </span><br><span class="line">    UpdateData(TRUE);   </span><br><span class="line">  </span><br><span class="line">    // 将被加数和加数的加和赋值给m_editSum   </span><br><span class="line">    m_editSum = m_editSummand + m_editAddend;   </span><br><span class="line">  </span><br><span class="line">    // 根据各变量的值更新相应的控件。和的编辑框会显示m_editSum的值   </span><br><span class="line">    UpdateData(FALSE);   </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>在上面的代码中已经添加注释，大家应该很容易理解了。对于UpdateData()函数的说明在上一讲中已经介绍过，如果忘了可以再回上一讲了解了解。</p>
+<p>接下来我们运行下此应用程序。在运行结果界面中，输入被加数5.1，加数2.3，然后点“计算”：</p>
+<p><img src="14.jpg" alt></p>
+<p>在上图中可以看到，点“计算”按钮后，和的编辑框中显示了正确结果：7.4。</p>
+<p>简单分析下运行过程：输入被加数和加数，点“计算”按钮后产生点击消息，从而调用OnBnClickedAddButton()函数。进入此函数后，首先由UpdateData(TRUE)函数将被加数的值5.1和加数的值2.3分别保存到变量m_editSummand和m_editAddend，然后通过语句m_editSum = m_editSummand + m_editAddend;计算出被加数和加数的和为7.4，并把7.4赋值给m_editSum。最后调用UpdateData(FALSE)根据被加数、加数、和的值更新三个编辑框的显示值，就得到了上图中的结果。</p>
+<p>到此，一个具有简单的加法运算功能的加法计算器应用程序就基本完成了。</p>
+<hr>
+<p>本节主要讲对话框上控件的Tab顺序如何调整。</p>
+<p>上一讲为“计算”按钮添加了消息处理函数后，加法计算器已经能够进行浮点数的加法运算。但是还有个遗留的小问题，就是对话框控件的Tab顺序问题。</p>
+<p>运行加法计算器程序，显示对话框后不进行任何操作，直接按回车，可以看到对话框退出了。这是因为“退出”按钮是Tab顺序为1的控件，也就是第一个接受用户输入的控件。但是按照我们的输入习惯，应该是被加数的编辑框首先接受用户输入，然后是加数编辑框，再接下来是“计算”按钮，最后才是“退出”按钮。</p>
+<p>我们先来直观的看看各个控件的Tab顺序吧。打开“Resource View”视图，然后在资源中找到对话框IDD_ADDITION_DIALOG，双击ID后中间客户区域出现其模板视图。在主菜单中选择“Format”-&gt;”Tab Order”，或者按快捷键Ctrl+D，对话框模板上就会显示各个控件的Tab顺序数字。如下图：</p>
+<p><img src="15.jpg" alt></p>
+<p>上图中每个控件左上角都有一个数字，这就是它的Tab响应顺序。对话框刚打开时输入焦点就在Tab顺序为1的“退出”按钮上，不做任何操作按下Tab键，输入焦点就会转移到Tab顺序为2的“被加数”静态文本框上，但是因为静态文本框不接受任何输入，所以输入焦点继续自动转移到Tab顺序为3的被加数编辑框，再按Tab键，输入焦点又会转移到Tab顺序为4的“加数”静态文本框上，同样由于它是静态文本框，输入焦点不停留继续转移到加数编辑框，后面的控件同理。</p>
+<p>我们认为这个顺序不合理，那怎么修改呢？很简单，从自己认为Tab顺序应该为1的控件开始依次单击，随着单击的完成，各控件的Tab响应顺序也按我们的想法设置好了。</p>
+<p>例如，此例中我们可以依次单击被加数编辑框、“被加数”静态文本框、加数编辑框、“加数”静态文本框、和编辑框、“和”静态文本框、“计算”按钮和“退出”按钮。设置完后如下图：</p>
+<p><img src="16.jpg" alt></p>
+<p>最后按ESC键，确认设置并退出对话框模板的Tab顺序设置状态。</p>
+<p>现在我们再运行程序，可以看到对话框打开后最初的输入焦点在被加数编辑框上，然后我们按Tab键，输入焦点移到加数编辑框上，继续多次按Tab键时，输入焦点会按“和编辑框–‘计算’按钮–‘退出’按钮–被加数编辑框–加数编辑框–和编辑框……”的顺序循环转移。这样就达到了我们的目的。</p>
+<hr>
+<p>加法计算器对话框程序大家照着做一遍后，相信对基于对话框的程序有些了解了，有个好的开始对于以后的学习大有裨益。趁热打铁，这一节讲讲什么是模态对话框和非模态对话框，以及模态对话框怎样弹出。</p>
+<p>一.模态对话框和非模态对话框</p>
+<p>Windows对话框分为两类：模态对话框和非模态对话框。</p>
+<p>模态对话框是这样的对话框，当它弹出后，本应用程序其他窗口将不再接受用户输入，只有该对话框响应用户输入，在对它进行相应操作退出后，其他窗口才能继续与用户交互。</p>
+<p>非模态对话框则是，它弹出后，本程序其他窗口仍能响应用户输入。非模态对话框一般用来显示提示信息等。</p>
+<p>大家对Windows系统很了解，相信这两种对话框应该都遇到过。之前的加法计算器对话框其实就是模态对话框。</p>
+<p>二.模态对话框是怎样弹出的</p>
+<p>毕竟加法计算器程序大部分都是MFC自动生成的，对话框怎么弹出来的大家可能还不是很清楚。下面简单说说它是在哪里弹出来的，再重新建一个新的对话框并弹出它，这样大家实践以后就能更灵活的使用模态对话框了。</p>
+<p>大家打开Addition.cpp文件，可以看到CAdditionApp类有个InitInstance()函数，在MFC应用程序框架分析中提到过此函数，不过那是单文档应用程序App类中的，函数体不太相同，但都是进行App类实例的初始化工作。</p>
+<p>InitInstance()函数的后半部分有一段代码就是定义对话框对象并弹出对话框的，下面给出这段代码并加以注释：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">C++代码</span><br><span class="line">CAdditionDlg dlg;        // 定义对话框类CAdditionDlg的对象dlg   </span><br><span class="line">m_pMainWnd = &amp;dlg;       // 将dlg设为主窗口   </span><br><span class="line">INT_PTR nResponse = dlg.DoModal();   // 弹出对话框dlg，并将DoModal函数的返回值（退出时点击按钮的ID）赋值给nResponse   </span><br><span class="line">if (nResponse == IDOK)               // 判断返回值是否为OK按钮（其ID为IDOK，已经将它删除）   </span><br><span class="line">&#123;   </span><br><span class="line">    // TODO: Place code here to handle when the dialog is   </span><br><span class="line">    //  dismissed with OK   </span><br><span class="line">&#125;   </span><br><span class="line">else if (nResponse == IDCANCEL)      // 判断返回值是否为Cancel按钮（其ID为IDCANCEL，将它的Caption改为了“退出”）   </span><br><span class="line">&#123;   </span><br><span class="line">    // TODO: Place code here to handle when the dialog is   </span><br><span class="line">    //  dismissed with Cancel   </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>弹出对话框比较关键的一个函数，就是对话框类的DoModal()函数。CDialog::DoModal()函数的原型为：</p>
+<p>virtual INT_PTR DoModal(); 　　</p>
+<p>返回值：整数值，指定了传递给CDialog::EndDialog（该函数用于关闭对话框）的nResult参数值。如果函数不能创建对话框，则返回-1；如果出现其它错误，则返回IDABORT。</p>
+<p>调用了它对话框就会弹出，返回值是退出对话框时所点的按钮的ID，比如，我们点了“退出”按钮，那么DoModal返回值为IDCANCEL。</p>
+<p>三.添加一个新对话框并弹出它</p>
+<p>再为加法计算器程序添加一个对话框，以在计算之前询问用户是否确定要进行计算。大家可以完整的看下对话框的添加和弹出过程。</p>
+<p>1.在Resource View中的“Dialog”上点右键选择“Insert Dialog”，创建一个新的对话框模板，修改其ID为IDD_TIP_DIALOG，Caption改为“提示”，然后参考“为对话框添加控件”中所讲，在对话框模板上添加一个静态文本框（static text），Caption改为“您确定要进行加法计算吗？”，接下来修改OK按钮的Caption为“确定”，Cancel按钮的Caption为“取消”，最后调整各个控件的位置和对话框的大小。最终的对话框模板如下图：</p>
+<p><img src="17.jpg" alt></p>
+<p>2.根据“创建对话框类和添加控件变量”中创建对话框类的方法，在对话框模板上点右键选择“Add Class…”，弹出添加类的对话框，设置“Class name”为CTipDlg，点“OK”。在Solution Explorer中可以看到生成了CTipDlg类的头文件TipDlg.h和源文件TipDlg.cpp。</p>
+<p>3.我们要在点“计算”按钮之后弹出此提示对话框，那么就要在“计算”按钮的消息处理函数OnBnClickedAddButton()中访问提示对话框类，所以为了访问CTipDlg类，在AdditionDlg.cpp中包含CTipDlg的头文件：#include “TipDlg.h”。</p>
+<p>4.修改OnBnClickedAddButton()的函数体，在所有代码前，构造CTipDlg类的对象tipDlg，并通过语句tipDlg.DoModal();弹出对话框，最后判断DoModal()函数的返回值是IDOK还是IDCANCEL来确定是否继续进行计算。OnBnClickedAddButton()函数修改后如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">C++代码</span><br><span class="line">void CAdditionDlg::OnBnClickedAddButton()   </span><br><span class="line">&#123;   </span><br><span class="line">    // TODO: Add your control notification handler code here   </span><br><span class="line">    INT_PTR nRes;             // 用于保存DoModal函数的返回值   </span><br><span class="line">  </span><br><span class="line">    CTipDlg tipDlg;           // 构造对话框类CTipDlg的实例   </span><br><span class="line">    nRes = tipDlg.DoModal();  // 弹出对话框   </span><br><span class="line">    if (IDCANCEL == nRes)     // 判断对话框退出后返回值是否为IDCANCEL，如果是则return，否则继续向下执行   </span><br><span class="line">        return;   </span><br><span class="line">  </span><br><span class="line">    // 将各控件中的数据保存到相应的变量   </span><br><span class="line">    UpdateData(TRUE);   </span><br><span class="line">  </span><br><span class="line">    // 将被加数和加数的加和赋值给m_editSum   </span><br><span class="line">    m_editSum = m_editSummand + m_editAddend;   </span><br><span class="line">  </span><br><span class="line">    // 根据各变量的值更新相应的控件。和的编辑框会显示m_editSum的值   </span><br><span class="line">    UpdateData(FALSE);   </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>5.测试。编译运行程序后，在对话框上输入被加数和加数，点“计算”，弹出提示对话框询问是否进行计算，如果选择“确定”，则提示对话框退出，并在主对话框上显示被加数和加数的和，而如果选择“取消”，则提示对话框也会退出，但主对话框显示的和不变，即没有进行加法计算。</p>
+<hr>
+<p>本节接着讲另一种对话框–非模态对话框的创建及显示。</p>
+<p>已经说过，非模态对话框显示后，程序其他窗口仍能正常运行，可以响应用户输入，还可以相互切换。会将上一讲中创建的Tip模态对话框改为非模态对话框，让大家看下效果。</p>
+<p>非模态对话框的对话框资源和对话框类</p>
+<p>实际上，模态对话框和非模态对话框在创建对话框资源和生成对话框类上是没有区别的，所以上一讲中创建的IDD_TIP_DIALOG对话框资源和CTipDlg类都不需要修改。</p>
+<p>创建及显示非模态对话框的步骤</p>
+<p>需要修改的是，对话框类实例的创建和显示，也就是之前在CAdditionDlg::OnBnClickedAddButton()函数体中添加的对话框显示代码。下面是具体步骤：</p>
+<p>1.在AdditionDlg.h中包含CTipDlg头文件并定义CTipDlg类型的指针成员变量。详细操作方法是，在AdditionDlg.cpp中删除之前添加的#include “TipDlg.h”，而在AdditionDlg.h中添加#include “TipDlg.h”，这是因为我们需要在AdditionDlg.h中定义CTipDlg类型的指针变量，所以要先包含它的头文件；然后在AdditionDlg.h中为CAdditionDlg类添加private成员变量CTipDlg  *m_pTipDlg;。</p>
+<p>2.在CAdditionDlg类的构造函数中初始化成员变量m_pTipDlg。如果cpp文件中函数太多，我们可以在Class View上半个视图中找到CAdditionDlg类，再在下半个视图中找到其构造函数双击，中间客户区域即可马上切到构造函数的实现处。在构造函数体中添加m_pTipDlg = NULL;，这是个好习惯，在C++编程入门系列的指针的赋值和指针运算中说到过，在任何指针变量使用前都初始化，可以避免因误访问重要内存地址而破坏此地址的数据。</p>
+<p>3.将上一讲中添加的模态对话框显示代码注释或删除掉，添加非模态对话框的创建和显示代码。VC++中注释单行代码使用“//”，注释多行代码可以在需注释的代码开始处添加“/<em>”，结束处添加“</em>/”。修改后的CAdditionDlg::OnBnClickedAddButton()函数如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">C++代码</span><br><span class="line">void CAdditionDlg::OnBnClickedAddButton()   </span><br><span class="line">&#123;   </span><br><span class="line">    // TODO: Add your control notification handler code here   </span><br><span class="line">    /*INT_PTR nRes;             // 用于保存DoModal函数的返回值  </span><br><span class="line"> </span><br><span class="line">    CTipDlg tipDlg;           // 构造对话框类CTipDlg的实例  </span><br><span class="line">    nRes = tipDlg.DoModal();  // 弹出对话框  </span><br><span class="line">    if (IDCANCEL == nRes)     // 判断对话框退出后返回值是否为IDCANCEL，如果是则return，否则继续向下执行  </span><br><span class="line">        return;*/  </span><br><span class="line">  </span><br><span class="line">    // 如果指针变量m_pTipDlg的值为NULL，则对话框还未创建，需要动态创建   </span><br><span class="line">    if (NULL == m_pTipDlg)   </span><br><span class="line">    &#123;   </span><br><span class="line">        // 创建非模态对话框实例   </span><br><span class="line">        m_pTipDlg = new CTipDlg();   </span><br><span class="line">        m_pTipDlg-&gt;Create(IDD_TIP_DIALOG, this);   </span><br><span class="line">    &#125;   </span><br><span class="line">    // 显示非模态对话框   </span><br><span class="line">    m_pTipDlg-&gt;ShowWindow(SW_SHOW);   </span><br><span class="line">  </span><br><span class="line">    // 将各控件中的数据保存到相应的变量   </span><br><span class="line">    UpdateData(TRUE);   </span><br><span class="line">  </span><br><span class="line">    // 将被加数和加数的加和赋值给m_editSum   </span><br><span class="line">    m_editSum = m_editSummand + m_editAddend;   </span><br><span class="line">  </span><br><span class="line">    // 根据各变量的值更新相应的控件。和的编辑框会显示m_editSum的值   </span><br><span class="line">    UpdateData(FALSE);   </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>4.因为此非模态对话框实例是动态创建的，所以需要手动删除此动态对象来销毁对话框。我们在CAdditionDlg类的析构函数中添加删除代码，但是MFC并没有自动给出析构函数，这时需要我们手动添加，在对话框对象析构时就会调用我们自定义的析构函数了。在AdditionDlg.h文件中为CAdditionDlg添加析构函数声明：~CAdditionDlg();，然后在AdditionDlg.cpp文件中添加析构函数的实现，函数体如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">C++代码</span><br><span class="line">CAdditionDlg::~CAdditionDlg()   </span><br><span class="line">&#123;   </span><br><span class="line">    // 如果非模态对话框已经创建则删除它   </span><br><span class="line">    if (NULL != m_pTipDlg)   </span><br><span class="line">    &#123;   </span><br><span class="line">        // 删除非模态对话框对象   </span><br><span class="line">        delete m_pTipDlg;   </span><br><span class="line">    &#125;   </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>这样，非模态对话框创建和显示的代码就添加修改完了。让我们运行下看看效果吧。</p>
+<p>在加法计算器对话框上输入被加数和加数，然后点“计算”按钮，依然像上节一样弹出了提示对话框，但是先不要关闭它，你可以拖动它后面的加法计算器对话框试试，我们发现加法计算器对话框竟然可以拖动了，而且“和”编辑框里已经显示了运算结果，这表明提示对话框显示以后还没有关闭，OnBnClickedAddButton() 就继续向下执行了，不仅如此，加法计算器的每个编辑框还都可以响应输入。</p>
+<p>这只是一个简单的例子，非模态对话框的用处有很多，以后大家在软件开发中会用到。</p>
+<p>本节教程就到这里了，相信大家对对话框的使用更上了一个台阶了，在不同的情况下可以选择使用模态对话框和非模态对话框了。欢迎大家留言讨论。</p>
+<hr>
+<p>前面讲了模态对话框和非模态对话框，本节开始讲一种特殊的对话框–属性页对话框。另外，本套教程所讲大部分对VC++各个版本均可适用或者稍作修改即可，但考虑到终究还是基于VS2010版本的，所以将《VC++/MFC编程入门》改为《VS2010/MFC编程入门》。</p>
+<p>属性页对话框的分类</p>
+<p>属性页对话框想必大家并不陌生，XP系统中桌面右键点属性，弹出的就是属性页对话框，它通过标签切换各个页面。另外，我们在创建MFC工程时使用的向导对话框也属于属性页对话框，它通过点击“Next”等按钮来切换页面。</p>
+<p>属性页对话框就是包含一般属性页对话框和向导对话框两类。它将多个对话框集成于一身，通过标签或按钮来切换页面。</p>
+<p>属性页对话框相关类</p>
+<p>我们使用属性页对话框时，用到的类主要有两个：CPropertyPage类和CPropertySheet类。</p>
+<p>1.CPropertyPage类</p>
+<p>CPropertyPage类继承自CDialog类，它被用于处理某单个的属性页，所以要为每个属性页都创建一个继承自CPropertyPage的子类。大家可以在VS2010的MSDN中查找CPropertyPage类以及它的成员的详细说明。下面就为大家讲解MSDN中列出的CPropertyPage类的部分主要成员函数。</p>
+<p>（1）构造函数</p>
+<p>这里讲三个CProperty类的构造函数，函数原型为：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">CPropertyPage( );</span><br><span class="line"></span><br><span class="line">explicit CPropertyPage(</span><br><span class="line">        UINT nIDTemplate,</span><br><span class="line">        UINT nIDCaption = 0,</span><br><span class="line">        DWORD dwSize = sizeof(PROPSHEETPAGE)</span><br><span class="line">);</span><br><span class="line"></span><br><span class="line">explicit CPropertyPage(</span><br><span class="line">        LPCTSTR lpszTemplateName,</span><br><span class="line">        UINT nIDCaption = 0,</span><br><span class="line">        DWORD dwSize = sizeof(PROPSHEETPAGE)</span><br><span class="line">);</span><br></pre></td></tr></table></figure></p>
+<p>第一个是没有任何参数的构造函数。</p>
+<p>第二个构造函数中，参数nIDTemplate是属性页的对话框资源ID，参数nIDCaption是属性页对话框选项卡的标题所用字符串资源的ID，若设为0，则选项卡标题就使用该属性页的对话框资源的标题。</p>
+<p>第三个构造函数中，参数lpszTemplateName为属性页的对话框资源的名称字符串，不能为NULL。参数nIDCaption同上。</p>
+<p>（2）CancelToClose()函数</p>
+<p>在模态属性页对话框的属性页进行了某不可恢复的操作后，使用CancelToClose()函数将“OK”按钮改为“Close”按钮，并禁用“Cancel”按钮。函数原型为：</p>
+<p>void CancelToClose( );</p>
+<p>（3）SetModified()函数</p>
+<p>调用此函数可激活或禁用“Apply”按钮，函数原型为：</p>
+<p>void SetModified(BOOL bChanged = TRUE);</p>
+<p>（4）可重载函数</p>
+<p>CPropertyPage类提供了一些消息处理函数，来响应属性页对话框的各种消息。我们重载这些消息处理函数，就可以自定义对属性页对话框操作的处理。可重载的消息处理函数包括：</p>
+<p>OnApply：处理属性页的“Apply”按钮被单击的消息<br>OnCancel：处理属性页的“Cancel”按钮被单击的消息<br>OnKillActive：处理属性页当前活动状态被切换的消息，常用于数据验证<br>OnOK：处理属性页的“OK”按钮、“Apply”按钮或者“Close”按钮被单击的消息<br>OnQueryCancel：处理属性页的“Cancel”按钮被单击前发出的消息<br>OnReset：处理属性页的“Reset”按钮被单击的消息<br>OnSetActive：处理属性页被切换为当前活动页的消息<br>OnWizardBack：处理属性页的“Back”按钮被单击的消息，仅在向导对话框中有效<br>OnWizardFinish：处理属性页的“Finish”按钮被单击的消息，仅在向导对话框中有效<br>OnWizardNext：处理属性页的“Next”按钮被单击的消息，仅在向导对话框中有效</p>
+<p>2.CPropertySheet类</p>
+<p>CPropertySheet类继承自CWnd类，它是属性表类，负责加载、打开或删除属性页，并可以在属性页对话框中切换属性页。它跟对话框类似，也有模态和非模态两种。下面就讲解CPropertySheet类的部分成员函数。</p>
+<p>（1）构造函数</p>
+<p>这里依然列出CPropertySheet类的三个构造函数：</p>
+<p>CPropertySheet( );</p>
+<p>explicit CPropertySheet(<br>       UINT nIDCaption,<br>       CWnd* pParentWnd = NULL,<br>       UINT iSelectPage = 0<br>);</p>
+<p>explicit CPropertySheet(<br>       LPCTSTR pszCaption,<br>       CWnd* pParentWnd = NULL,<br>       UINT iSelectPage = 0<br>);</p>
+<p>参数nIDCaption：标题的字符串资源的ID。</p>
+<p>参数pParentWnd：属性页对话框的父窗口，若设为NULL，则父窗口为应用程序的主窗口。</p>
+<p>参数iSelectPage：初始状态时，活动属性页的索引，默认为第一个添加到属性表的属性页。</p>
+<p>参数pszCaption：标题字符串。</p>
+<p>（2）GetActiveIndex()函数</p>
+<p>获取当前活动属性页的索引。函数原型为：</p>
+<p>int GetActiveIndex( ) const;</p>
+<p>返回值：当前活动属性页的索引。</p>
+<p>（3）GetActivePage()函数</p>
+<p>获取当前活动属性页对象。函数原型为：</p>
+<p>CPropertyPage* GetActivePage( ) const;</p>
+<p>返回值：当前活动属性页对象的指针。</p>
+<p>（4）GetPage()函数</p>
+<p>获取某个属性页对象。函数原型为：</p>
+<p>CPropertyPage* GetPage(int nPage) const;</p>
+<p>参数nPage：目标属性页的索引。</p>
+<p>返回值：目标属性页对象的指针。</p>
+<p>（5）GetPageCount()函数</p>
+<p>获取属性页的数量。函数原型为：</p>
+<p>int GetPageCount( ) const;</p>
+<p>返回值：属性页的数量。</p>
+<p>（6）GetPageIndex()函数</p>
+<p>获取某属性页在属性页对话框中的索引。函数原型为：</p>
+<p>int GetPageIndex(CPropertyPage* pPage);</p>
+<p>参数pPage：要获取索引的属性页对象的指针。</p>
+<p>返回值：属性页对象在属性页对话框中的索引。</p>
+<p>（7）SetActivePage()函数</p>
+<p>设置某个属性页为活动属性页。函数原型为：   </p>
+<p>BOOL SetActivePage(<br>         int nPage<br>);</p>
+<p>BOOL SetActivePage(<br>         CPropertyPage* pPage<br>);</p>
+<p>参数nPage：要设置为活动属性页的索引。</p>
+<p>参数pPage：要设置为活动属性页的对象指针。</p>
+<p>（8）SetWizardButtons()函数</p>
+<p>在向导对话框上启用或禁用Back、Next或Finish按钮，应在调用DoModal之前调用此函数。函数原型为：</p>
+<p>void SetWizardButtons(<br>        DWORD dwFlags<br>);</p>
+<p>参数dwFlags：设置向导按钮的外观和功能属性。可以是以下值的组合：</p>
+<p>PSWIZB_BACK                    启用“Back”按钮，如果不包含此值则禁用“Back”按钮。<br>PSWIZB_NEXT                    启用“Next”按钮，如果不包含此值则禁用“Next”按钮。<br>PSWIZB_FINISH                  启用“Finish”按钮。<br>PSWIZB_DISABLEDFINISH   显示禁用的“Finish”按钮。</p>
+<p>（9）SetWizardMode()函数</p>
+<p>设置属性页对话框为向导对话框模式，应在调用DoModal之前调用此函数。函数原型为：</p>
+<p>void SetWizardMode( );</p>
+<p>（10）SetTitle()函数</p>
+<p>设置属性对话框的标题。函数原型为：</p>
+<p>void SetTitle(<br>       LPCTSTR lpszText,<br>       UINT nStyle = 0<br>);</p>
+<p>参数lpszText：标题字符串。</p>
+<p>参数nStyle：指定属性表标题的风格。应当为0或PSH_PROPTITLE。如果设为PSH_PROPTITLE，则单词“Properties”会出现在指定标题之后。例如，SetTitle(“Simple”,PSH_PROPTITLE)这种调用会使得属性表标题为“Simple Properties”。</p>
+<p>（11）AddPage()函数</p>
+<p>为属性对话框添加新的属性页。函数原型为：</p>
+<p>void AddPage(<br>       CPropertyPage *pPage<br>);</p>
+<p>参数pPage：要添加的新的属性页的对象指针。</p>
+<p>（12）PressButton()函数</p>
+<p>模拟按下某指定的按钮。函数原型为：   </p>
+<p>void PressButton(<br>       int nButton<br>);</p>
+<p>参数nButton：要模拟按下的按钮，它可以是下列值之一：</p>
+<p>PSBTN_BACK   选择“Back”按钮。<br>PSBTN_NEXT   选择“Next”按钮。<br>PSBTN_FINISH   选择“Finish”按钮。<br>PSBTN_OK   选择“OK”按钮。<br>PSBTN_APPLYNOW   选择“Apply”按钮。<br>PSBTN_CANCEL   选择“Cancel”按钮。<br>PSBTN_HELP   选择“帮助”按钮。</p>
+<p>（13）RemovePage()函数</p>
+<p>删除某属性页。函数原型为：</p>
+<p>void RemovePage(<br>       CPropertyPage *pPage<br>);</p>
+<p>void RemovePage(<br>       int nPage<br>);</p>
+<p>参数pPage：要删除的属性页的对象指针。</p>
+<p>参数nPage：要删除的属性页的索引。</p>
+<p>属性对话框和相关的两个类就先介绍到这，主要是为后面使用属性页对话框做准备。有问题可以到博客交流。谢谢。</p>
+<hr>
+<p>上一讲讲了属性页对话框和相关的两个类CPropertyPage类和CPropertySheet类，对使用属性页对话框做准备。本节将为大家演示如何创建向导对话框。</p>
+<p>仍然以前面的“加法计算器”的例子为基础，在其中加入向导对话框，我们可以用它来说明加法计算器的使用方法，一步一步引导用户操作，这也是比较常见的用法。</p>
+<p>加法计算器使用时大概可以分为三步：输入被加数、输入加数、点“计算”按钮。</p>
+<p>就详细说明向导对话框的创建步骤：</p>
+<p>1.创建属性页对话框资源</p>
+<p>根据创建对话框模板和修改对话框属性中所讲方法，在“Resource View”的Dialog”节点上点右键，然后在右键菜单中选择“Insert Dialog”创建第一个对话框模板，对话框的ID属性设置为IDD_SUMMAND_PAGE，Caption属性改为“被加数页”，Style属性在下拉列表中选择“Child”，Border属性在下拉列表中选择“Thin”。</p>
+<p>删除“OK”和“Cancel”按钮，再按照为对话框添加控件中所讲方法，添加一个静态文本框，并修改静态文本框的Caption属性为“请先输入double型被加数”。</p>
+<p>按照上述步骤，继续添加第二个和第三个对话框资源。第二个对话框模板的ID设为IDD_ADDEND_PAGE，Caption属性改为“加数页”，也添加一个静态文本框，Caption设为“请继续输入double型加数”，其他属性同第一个对话框。第三个对话框模板的ID设为IDD_ADD_PAGE，Caption属性改为“计算页”，添加静态文本框的Caption属性改为“最后请按下“计算”按钮”，其他属性也第一个对话框一样。</p>
+<p>2.创建属性页类</p>
+<p>按照创建对话框类和添加控件变量中的方法，在第一个对话框模板上点右键，在右键菜单中选择“Add Class”，弹出类向导对话框，在“Class name”编辑框中输入类名“CSummandPage”，与之前不同的是，因为属性页类都应继承于CPropertyPage类，所以要修改下面“Base class”的选项，在下拉列表中选择“CPropertyPage”。</p>
+<p>因为是第一个属性页，所以它应该有一个“下一步”按钮，在哪里添加呢？上一讲CPropertyPage类的可重载函数中提到，OnSetActive函数用于处理属性页被切换为当前活动页的消息，所以我们可以在OnSetActive函数中进行相关设置。</p>
+<p>那怎样重载OnSetActive函数呢？我们可以在“Class View”中找到“CSummandPage”节点，点右键弹出右键菜单，选择“Properties”，然后VS2010右侧面板上会显示对话框的属性列表，属性列表的工具栏上有个tip信息为“Overrides”的按钮，按下它，下方列表中就列出了重载函数，找到“OnSetActive”，点其右侧空白列表项出现向下箭头，再点箭头就在下面出现了“<add>OnSetActive”的选项，选择它就会自动在CSummandPage类中添加函数OnSetActive。</add></p>
+<p><img src="18.jpg" alt></p>
+<p>我们只需在OnSetActive函数体中添加相关代码就可以实现添加“下一步”按钮的效果了。新的函数体如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">C++代码</span><br><span class="line">BOOL CSummandPage::OnSetActive()   </span><br><span class="line">&#123;   </span><br><span class="line">    // TODO: Add your specialized code here and/or call the base class  </span><br><span class="line">  </span><br><span class="line">    // 获得父窗口，即属性表CPropertySheet类   </span><br><span class="line">    CPropertySheet* psheet = (CPropertySheet*) GetParent();   </span><br><span class="line">    // 设置属性表只有“下一步”按钮   </span><br><span class="line">    psheet-&gt;SetWizardButtons(PSWIZB_NEXT);   </span><br><span class="line">  </span><br><span class="line">    return CPropertyPage::OnSetActive();   </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>为第二个和第三个对话框也分别添加属性页类CAddendPage和CAddPage。但第二个对话框的属性页不需要重载OnSetActive函数。第三个对话框是最后一个对话框，所以不需要“下一步”按钮，而应该换成“完成”按钮，所以也需要重载OnSetActive函数设置“完成”按钮。重载后的OnSetActive如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">C++代码</span><br><span class="line">BOOL CAddPage::OnSetActive()   </span><br><span class="line">&#123;   </span><br><span class="line">    // TODO: Add your specialized code here and/or call the base class  </span><br><span class="line">  </span><br><span class="line">    // 获得父窗口，即属性表CPropertySheet类   </span><br><span class="line">    CPropertySheet* psheet = (CPropertySheet*) GetParent();   </span><br><span class="line">    //设置属性表只有“完成”按钮   </span><br><span class="line">    psheet-&gt;SetFinishText(_T(&quot;完成&quot;));   </span><br><span class="line">  </span><br><span class="line">    return CPropertyPage::OnSetActive();   </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>上面的代码段中，字符串“完成”前加了个_T，这是因为本工程创建的时候用的默认的Unicode字符集，而如果“完成”前不加_T就是ASCII字符串。_T实际上是一个宏，工程的字符集选择为Unicode时字符串就转为Unicode字符串，选择为Muli-Byte时就转为ASCII字符串。我们可以在Solution Explorer的Addition根节点上点右键，在右键菜单上选择“Properties”，弹出工程的属性对话框，Configuration Properties-&gt;General右侧列表中的Character Set就显示选择的字符集。</p>
+<p>那点了第三个属性页上的“完成”按钮我们想进行某些处理的话，就重载OnWizardFinish函数，方法同OnSetActive函数。重载后的OnWizardFinish函数如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">C++代码</span><br><span class="line">BOOL CAddPage::OnWizardFinish()   </span><br><span class="line">&#123;   </span><br><span class="line">    // TODO: Add your specialized code here and/or call the base class  </span><br><span class="line">  </span><br><span class="line">    // 提示向导完成   </span><br><span class="line">    MessageBox(_T(&quot;使用说明向导已阅读完！&quot;));   </span><br><span class="line">  </span><br><span class="line">    return CPropertyPage::OnWizardFinish();   </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>3.创建属性表类</p>
+<p>属性页资源和属性页类创建完以后，还不能生成向导对话框，我们还需要一个属性表类，来容纳这些属性页。</p>
+<p>在Solution Explorer视图中的根节点“Addition”上点右键，在右键菜单中选择Add-&gt;Class，弹出“Add Class”对话框，然后在中间区域中选择“MFC Class”，点“Add”按钮，弹出另一个类向导对话框，设置Class name为CAddSheet，Base class选择“CPropertySheet”，点“Finish”按钮，这样就属性表类就建好了。</p>
+<p>接下来，在新生成的AddSheet.h中包含三个属性页类的头文件：</p>
+<p>#include “SummandPage.h”</p>
+<p>#include “AddendPage.h”</p>
+<p>#include “AddPage.h”</p>
+<p>之后在AddSheet.h中添加private变量：</p>
+<p>CSummandPage    m_summandPage;C<br>CAddendPage     m_addendPage;<br>CAddPage        m_addPage;</p>
+<p>然后在AddSheet.cpp文件中修改CAddSheet的两个构造函数为：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">C++代码</span><br><span class="line">CAddSheet::CAddSheet(UINT nIDCaption, CWnd* pParentWnd, UINT iSelectPage)   </span><br><span class="line">    :CPropertySheet(nIDCaption, pParentWnd, iSelectPage)   </span><br><span class="line">&#123;   </span><br><span class="line">    // 添加三个属性页到属性表   </span><br><span class="line">    AddPage(&amp;m_summandPage);   </span><br><span class="line">    AddPage(&amp;m_addendPage);   </span><br><span class="line">    AddPage(&amp;m_addPage);   </span><br><span class="line">&#125;   </span><br><span class="line">  </span><br><span class="line">CAddSheet::CAddSheet(LPCTSTR pszCaption, CWnd* pParentWnd, UINT iSelectPage)   </span><br><span class="line">    :CPropertySheet(pszCaption, pParentWnd, iSelectPage)   </span><br><span class="line">&#123;   </span><br><span class="line">    // 添加三个属性页到属性表   </span><br><span class="line">    AddPage(&amp;m_summandPage);   </span><br><span class="line">    AddPage(&amp;m_addendPage);   </span><br><span class="line">    AddPage(&amp;m_addPage);   </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>4.显示向导对话框</p>
+<p>我们在加法计算器对话框上添加一个按钮，点击它就打开向导对话框。此按钮的ID设为IDC_INSTRUCT_BUTTON，Caption属性设为“使用说明”。</p>
+<p>按照为控件添加消息处理函数中所讲方法，为IDC_INSTRUCT_BUTTON按钮在CAdditionDlg类中添加点击消息的处理函数OnBnClickedInstructButton。然后在AdditionDlg.cpp文件中包含CAddSheet的头文件：#include “AddSheet.h”。最后修改OnBnClickedInstructButton函数如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">C++代码</span><br><span class="line">void CAdditionDlg::OnBnClickedInstructButton()   </span><br><span class="line">&#123;   </span><br><span class="line">    // TODO: Add your control notification handler code here   </span><br><span class="line">  </span><br><span class="line">    // 创建属性表对象   </span><br><span class="line">    CAddSheet sheet(_T(&quot;&quot;));   </span><br><span class="line">    // 设置属性对话框为向导对话框   </span><br><span class="line">    sheet.SetWizardMode();   </span><br><span class="line">    // 打开模态向导对话框   </span><br><span class="line">    sheet.DoModal();   </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>到此，向导对话框就完整的创建完成了，并可以在加法计算器对话框上点“使用说明”按钮显示出来。我们来看看效果吧：</p>
+<p><img src="19.jpg" alt></p>
+<p>上图只是被加数页的效果，点其上“下一步”按钮就可以继续显示后面的两个页面。</p>
+<p>是不是向导对话框没有以前想象的那般复杂了？大家可以发挥想象，进行更复杂的修改，实现更完善的功能。依然欢迎朋友们到博客来交流学习。</p>
+<hr>
+<p>属性页对话框包括向导对话框和一般属性页对话框两类，上一节讲了如何创建并显示向导对话框，本节将继续介绍一般属性页对话框的创建和显示。</p>
+<p>实际上，一般属性页对话框的创建和显示过程和向导对话框是很类似的。将上一节中的向导对话框进行少量修改，使其成为一般属性页对话框。</p>
+<p>一般属性页对话框的创建步骤：</p>
+<p>1.创建属性页对话框资源</p>
+<p>属性页对话框资源的创建方法同向导对话框是一样的，上一讲中的对话框资源不需进行任何修改。</p>
+<p>2.创建属性页类</p>
+<p>属性页类的创建和向导对话框的属性页类也基本一样，只是一般属性页对话框中不需要“下一步”和“完成”等按钮，所以上一讲中属性页类的OnSetActive和OnWizardFinish等重载函数可以去掉。即CSummandPage类中的OnSetActive函数、CAddPage类中的OnSetActive函数和OnWizardFinish函数可以删除或注释掉。其他部分不需作任何修改。</p>
+<p>3.创建属性表类</p>
+<p>创建属性表类的过程同向导对话框属性表类也是一样的，所以上一讲中的CAddSheet类不需修改。</p>
+<p>4.显示一般属性页对话框</p>
+<p>上一讲向导对话框的显示是在OnBnClickedInstructButton函数中实现的，其中语句sheet.SetWizardMode();旨在设置属性表为向导对话框模式，所以显示一般属性页对话框时不需调用SetWizardMode成员函数。另外，我们可以将属性页对话框的标题设为“使用说明”，在构造属性表对象时将此字符串作为构造函数的参数传入。OnBnClickedInstructButton函数修改如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">C++代码</span><br><span class="line">void CAdditionDlg::OnBnClickedInstructButton()   </span><br><span class="line">&#123;   </span><br><span class="line">    // TODO: Add your control notification handler code here   </span><br><span class="line">  </span><br><span class="line">    // 创建属性表对象   </span><br><span class="line">    CAddSheet sheet(_T(&quot;使用说明&quot;));   </span><br><span class="line">       </span><br><span class="line">    // 打开模态一般属性页对话框   </span><br><span class="line">    sheet.DoModal();   </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>这样一般属性页对话框的创建和显示就讲完了，我们运行下程序，在结果对话框上点“使用说明”按钮看看效果吧：</p>
+<p><img src="20.png" alt></p>
+<p>再总结下，一般属性页对话框和向导对话框的创建和显示的不同包括，是否需要OnSetActive和OnWizardFinish等重载函数，是否需要调用属性表类的SetWizardMode函数设置为向导对话框模式。</p>
+<p>原文链接：<a href="https://blog.csdn.net/wang18323834864/article/details/78621633" target="_blank" rel="noopener">https://blog.csdn.net/wang18323834864/article/details/78621633</a></p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/04/09/计划（2019-04-09-04-12）/" rel="next" title="JS学习（04/09）">
+                <i class="fa fa-chevron-left"></i> JS学习（04/09）
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/04/15/杂记1/" rel="prev" title="杂记1">
+                杂记1 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/images/sk.png" alt="U">
+            
+              <p class="site-author-name" itemprop="name">U</p>
+              <p class="site-description motion-element" itemprop="description">往事不可追，今朝把酒醉。</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">8</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">U</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
