@@ -7,7 +7,7 @@ categories:
 
 ---
 
-详细介绍Base64的编码转换方式。
+关于Base64的编码转换方式。
 
 所谓Base64，就是说选出64个字符----小写字母a-z、大写字母A-Z、数字0-9、符号"+"、"/"（再加上作为垫字的"="，实际上是65个字符）----作为一个基本字符集。然后，其他所有符号都转换成这个字符集中的字符。
 
@@ -63,12 +63,68 @@ categories:
 
 举一个具体的实例，演示英语单词Man如何转成Base64编码。
 
-|Text content   |	M                            |	a                            |	n                            |
-|---------------|--------------------------------|-------------------------------|-------------------------------|
-|ASCII          |	77                           |	97                           |	110                          |
-|Bit pattern    |	0 |	1|	0|	0|	1|	1|	0| 	1|	0|	1|	1|	0|	0|	0|	0|	1|	0|	1|	1|	0|	1|	1|	1|	0|
-|Index          |	19                   |	                   22|                    	5|                     46|
-|Base64-Encoded |	T                    |                   	W|	                    F|	                    u|
+<escape>
+<table>
+<thead>
+<tr>
+<th style="width: 50px;"> Text content </th>
+<th colspan="8">M </th>
+<th colspan="8">a</th>
+<th colspan="8">n</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> ASCII </td>
+<td colspan="8">77</td>
+<td colspan="8">97</td>
+<td colspan="8">110</td>
+</tr>
+<tr>
+<td> Bit pattern </td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr>
+<td> Index </td>
+<td colspan="6">19</td>
+<td colspan="6">22</td>
+<td colspan="6">5</td>
+<td colspan="6">46</td>
+</tr>
+<tr>
+<td> Base64-Encoded </td>
+<td colspan="6">T</td>
+<td colspan="6">W</td>
+<td colspan="6">F</td>
+<td colspan="6">u</td>
+</tr>
+</tbody>
+</table>
+</escape>
+
 ```
 第一步，"M"、"a"、"n"的ASCII值分别是77、97、110，对应的二进制值是01001101、01100001、01101110，将它们连成一个24位的二进制字符串010011010110000101101110。
 
@@ -106,6 +162,6 @@ b）一个字节的情况：将这一个字节的8个二进制位，按照上面
 
 在PHP语言中，有一对专门的函数用于Base64转换：base64_encode()用于编码、base64_decode()用于解码。
 
-这对函数的特点是，它们不管输入文本的编码是什么，都会按照规则进行Base64编码。因此，如果你想得到utf-8编码下的Base64对应值，你就必须自己保证，输入的文本是utf-8编码的。
+这对函数的特点是，它们不管输入文本的编码是什么，都会按照规则进行Base64编码。**因此，如果你想得到utf-8编码下的Base64对应值，你就必须自己保证，输入的文本是utf-8编码的。**
 
 原文链接：http://www.ruanyifeng.com/blog/2008/06/base64.html
