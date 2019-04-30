@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="详细介绍Base64的编码转换方式。 所谓Base64，就是说选出64个字符—-小写字母a-z、大写字母A-Z、数字0-9、符号”+”、”/“（再加上作为垫字的”=”，实际上是65个字符）—-作为一个基本字符集。然后，其他所有符号都转换成这个字符集中的字符。 具体来说，转换方式可以分为四步。12345678第一步，将每三个字节作为一组，一共是24个二进制位。第二步，将这24个二进制位分为四组，每个">
+<meta name="description" content="关于Base64的编码转换方式。 所谓Base64，就是说选出64个字符—-小写字母a-z、大写字母A-Z、数字0-9、符号”+”、”/“（再加上作为垫字的”=”，实际上是65个字符）—-作为一个基本字符集。然后，其他所有符号都转换成这个字符集中的字符。 具体来说，转换方式可以分为四步。12345678第一步，将每三个字节作为一组，一共是24个二进制位。第二步，将这24个二进制位分为四组，每个组有">
 <meta property="og:type" content="article">
 <meta property="og:title" content="base64编码了解">
 <meta property="og:url" content="http://yoursite.com/2019/04/29/base64编码了解/index.html">
 <meta property="og:site_name" content="U">
-<meta property="og:description" content="详细介绍Base64的编码转换方式。 所谓Base64，就是说选出64个字符—-小写字母a-z、大写字母A-Z、数字0-9、符号”+”、”/“（再加上作为垫字的”=”，实际上是65个字符）—-作为一个基本字符集。然后，其他所有符号都转换成这个字符集中的字符。 具体来说，转换方式可以分为四步。12345678第一步，将每三个字节作为一组，一共是24个二进制位。第二步，将这24个二进制位分为四组，每个">
+<meta property="og:description" content="关于Base64的编码转换方式。 所谓Base64，就是说选出64个字符—-小写字母a-z、大写字母A-Z、数字0-9、符号”+”、”/“（再加上作为垫字的”=”，实际上是65个字符）—-作为一个基本字符集。然后，其他所有符号都转换成这个字符集中的字符。 具体来说，转换方式可以分为四步。12345678第一步，将每三个字节作为一组，一共是24个二进制位。第二步，将这24个二进制位分为四组，每个组有">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-04-29T08:07:47.123Z">
+<meta property="og:updated_time" content="2019-04-30T01:47:23.125Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="base64编码了解">
-<meta name="twitter:description" content="详细介绍Base64的编码转换方式。 所谓Base64，就是说选出64个字符—-小写字母a-z、大写字母A-Z、数字0-9、符号”+”、”/“（再加上作为垫字的”=”，实际上是65个字符）—-作为一个基本字符集。然后，其他所有符号都转换成这个字符集中的字符。 具体来说，转换方式可以分为四步。12345678第一步，将每三个字节作为一组，一共是24个二进制位。第二步，将这24个二进制位分为四组，每个">
+<meta name="twitter:description" content="关于Base64的编码转换方式。 所谓Base64，就是说选出64个字符—-小写字母a-z、大写字母A-Z、数字0-9、符号”+”、”/“（再加上作为垫字的”=”，实际上是65个字符）—-作为一个基本字符集。然后，其他所有符号都转换成这个字符集中的字符。 具体来说，转换方式可以分为四步。12345678第一步，将每三个字节作为一组，一共是24个二进制位。第二步，将这24个二进制位分为四组，每个组有">
 
 
 
@@ -331,30 +331,31 @@
       
 
       
-        <p>详细介绍Base64的编码转换方式。</p>
+        <p>关于Base64的编码转换方式。</p>
 <p>所谓Base64，就是说选出64个字符—-小写字母a-z、大写字母A-Z、数字0-9、符号”+”、”/“（再加上作为垫字的”=”，实际上是65个字符）—-作为一个基本字符集。然后，其他所有符号都转换成这个字符集中的字符。</p>
 <p>具体来说，转换方式可以分为四步。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">第一步，将每三个字节作为一组，一共是24个二进制位。</span><br><span class="line"></span><br><span class="line">第二步，将这24个二进制位分为四组，每个组有6个二进制位。</span><br><span class="line"></span><br><span class="line">第三步，在每组前面加两个00，扩展成32个二进制位，即四个字节。</span><br><span class="line"></span><br><span class="line">第四步，根据下表，得到扩展后的每个字节的对应符号，这就是Base64的编码值。</span><br></pre></td></tr></table></figure></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">　　0　A　　17　R　　　34　i　　　51　z</span><br><span class="line"></span><br><span class="line">　　1　B　　18　S　　　35　j　　　52　0</span><br><span class="line"></span><br><span class="line">　　2　C　　19　T　　　36　k　　　53　1</span><br><span class="line"></span><br><span class="line">　　3　D　　20　U　　　37　l　　　54　2</span><br><span class="line"></span><br><span class="line">　　4　E　　21　V　　　38　m　　　55　3</span><br><span class="line"></span><br><span class="line">　　5　F　　22　W　　　39　n　　　56　4</span><br><span class="line"></span><br><span class="line">　　6　G　　23　X　　　40　o　　　57　5</span><br><span class="line"></span><br><span class="line">　　7　H　　24　Y　　　41　p　　　58　6</span><br><span class="line"></span><br><span class="line">　　8　I　　　25　Z　　　42　q　　　59　7</span><br><span class="line"></span><br><span class="line">　　9　J　　26　a　　　43　r　　　60　8</span><br><span class="line"></span><br><span class="line">　　10　K　　27　b　　　44　s　　　61　9</span><br><span class="line"></span><br><span class="line">　　11　L　　28　c　　　45　t　　　62　+</span><br><span class="line"></span><br><span class="line">　　12　M　　29　d　　　46　u　　　63　/</span><br><span class="line"></span><br><span class="line">　　13　N　　30　e　　　47　v</span><br><span class="line"></span><br><span class="line">　　14　O　　31　f　　　48　w　　　</span><br><span class="line"></span><br><span class="line">　　15　P　　32　g　　　49　x</span><br><span class="line"></span><br><span class="line">　　16　Q　　33　h　　　50　y</span><br></pre></td></tr></table></figure>
 <p>因为，Base64将三个字节转化成四个字节，因此Base64编码后的文本，会比原文本大出三分之一左右。</p>
 <p>举一个具体的实例，演示英语单词Man如何转成Base64编码。</p>
+
 <table>
 <thead>
 <tr>
-<th>Text content</th>
-<th>M</th>
-<th>a</th>
-<th>n</th>
+<th style="width: 50px;"> Text content </th>
+<th colspan="8">M </th>
+<th colspan="8">a</th>
+<th colspan="8">n</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>ASCII</td>
-<td>77</td>
-<td>97</td>
-<td>110</td>
+<td> ASCII </td>
+<td colspan="8">77</td>
+<td colspan="8">97</td>
+<td colspan="8">110</td>
 </tr>
 <tr>
-<td>Bit pattern</td>
+<td> Bit pattern </td>
 <td>0</td>
 <td>1</td>
 <td>0</td>
@@ -381,21 +382,22 @@
 <td>0</td>
 </tr>
 <tr>
-<td>Index</td>
-<td>19</td>
-<td>22</td>
-<td>5</td>
-<td>46</td>
+<td> Index </td>
+<td colspan="6">19</td>
+<td colspan="6">22</td>
+<td colspan="6">5</td>
+<td colspan="6">46</td>
 </tr>
 <tr>
-<td>Base64-Encoded</td>
-<td>T</td>
-<td>W</td>
-<td>F</td>
-<td>u</td>
+<td> Base64-Encoded </td>
+<td colspan="6">T</td>
+<td colspan="6">W</td>
+<td colspan="6">F</td>
+<td colspan="6">u</td>
 </tr>
 </tbody>
 </table>
+
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">第一步，&quot;M&quot;、&quot;a&quot;、&quot;n&quot;的ASCII值分别是77、97、110，对应的二进制值是01001101、01100001、01101110，将它们连成一个24位的二进制字符串010011010110000101101110。</span><br><span class="line"></span><br><span class="line">第二步，将这个24位的二进制字符串分成4组，每组6个二进制位：010011、010110、000101、101110。</span><br><span class="line"></span><br><span class="line">第三步，在每组前面加两个00，扩展成32个二进制位，即四个字节：00010011、00010110、00000101、00101110。它们的十进制值分别是19、22、5、46。</span><br><span class="line"></span><br><span class="line">第四步，根据上表，得到每个值对应Base64编码，即T、W、F、u。</span><br></pre></td></tr></table></figure>
 <p>因此，Man的Base64编码就是TWFu。</p>
 <p>如果字节数不足三，则这样处理：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">a）二个字节的情况：将这二个字节的一共16个二进制位，按照上面的规则，转成三组，最后一组除了前面加两个0以外，后面也要加两个0。这样得到一个三位的Base64编码，再在末尾补上一个&quot;=&quot;号。</span><br><span class="line"></span><br><span class="line">比如，&quot;Ma&quot;这个字符串是两个字节，可以转化成三组00010011、00010110、00010000以后，对应Base64值分别为T、W、E，再补上一个&quot;=&quot;号，因此&quot;Ma&quot;的Base64编码就是TWE=。</span><br><span class="line"></span><br><span class="line">b）一个字节的情况：将这一个字节的8个二进制位，按照上面的规则转成二组，最后一组除了前面加二个0以外，后面再加4个0。这样得到一个二位的Base64编码，再在末尾补上两个&quot;=&quot;号。</span><br><span class="line"></span><br><span class="line">比如，&quot;M&quot;这个字母是一个字节，可以转化为二组00010011、00010000，对应的Base64值分别为T、Q，再补上二个&quot;=&quot;号，因此&quot;M&quot;的Base64编码就是TQ==。</span><br></pre></td></tr></table></figure></p>
@@ -404,7 +406,7 @@
 <p>首先，”严”的utf-8编码为E4B8A5，写成二进制就是三字节的”11100100 10111000 10100101”。将这个24位的二进制字符串，按照第3节中的规则，转换成四组一共32位的二进制值”00111001 00001011 00100010 00100101”，相应的十进制数为57、11、34、37，它们对应的Base64值就为5、L、i、l。</p>
 <p>所以，汉字”严”（utf-8编码）的Base64值就是5Lil。</p>
 <p>在PHP语言中，有一对专门的函数用于Base64转换：base64_encode()用于编码、base64_decode()用于解码。</p>
-<p>这对函数的特点是，它们不管输入文本的编码是什么，都会按照规则进行Base64编码。因此，如果你想得到utf-8编码下的Base64对应值，你就必须自己保证，输入的文本是utf-8编码的。</p>
+<p>这对函数的特点是，它们不管输入文本的编码是什么，都会按照规则进行Base64编码。<strong>因此，如果你想得到utf-8编码下的Base64对应值，你就必须自己保证，输入的文本是utf-8编码的。</strong></p>
 <p>原文链接：<a href="http://www.ruanyifeng.com/blog/2008/06/base64.html" target="_blank" rel="noopener">http://www.ruanyifeng.com/blog/2008/06/base64.html</a></p>
 
       
@@ -518,10 +520,10 @@
               
               
               <div class="site-state-item site-state-categories">
-                <a href="/categories/index.html">
+                
                   <span class="site-state-item-count">7</span>
                   <span class="site-state-item-name">分类</span>
-                </a>
+                
               </div>
             
 
