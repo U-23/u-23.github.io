@@ -1,9 +1,10 @@
 ---
-title: Apache安装使用
+title: Apache服务安装使用
 date: 2019-05-05 10:20:08
 tags:
 categories:
-- 
+- 技术
+- 服务器
 ---
 
 1.Apache的win版本[下载地址](https://www.apachehaus.com/cgi-bin/download.plx#up)。
