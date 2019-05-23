@@ -64,3 +64,17 @@ iconv -f gb2312 -t utf-8 student.txt > student1.txt
         
 四、挂载
     `mount -a  #挂载之后，检查一下有没有编写错误的`        
+
+#### 问题4：ubuntu18.04安装引导问题
+(1) Ubuntu18.04 U盘启动安装，安装时出现“failed to load ldlinux.c32”
+选择u盘启动时，而不是uefi启动，提示此错误。
+找了很久，此博客可行：
+https://blog.csdn.net/tnaig/article/details/81139887
+
+U盘刻录时，采用RAW的写入方式。
+![](4.png)
+采用这种方式，可以U盘启动进行legacy安装。
+(2) ubuntu18.04 uefi系统安装时出错。使用/efi分区替换/boot分区
+出现错误**“在复制系统文件的时候出现了“无法将 grub-efi-amd64-signed 软件包安装到 /target/中。如果没有 GRUB 启动引导器，所安装的系统将无法启动。”**重装多次，依旧出错。
+ 需要使用方法：使用eif系统分区取代了boot分区
+ !()[5.png]
